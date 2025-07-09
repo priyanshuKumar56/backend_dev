@@ -18,11 +18,11 @@ userConnection("mongodb://127.0.0.1:27017/app-1").then(() => {
 logres_req("log.txt");
 // routes
 app.get("/", (req, res) => {
-  return res.end("Home Page");
+  return res.end("Home Page test");
 });
 app.use("/api/users", userrouter);
 
 app.listen(port, () => {
-  console.log("Server is running on port 5000 http://localhost:5000");
+  console.log("Server is running on port 5000 http://localhost:4000");
 });
 //
